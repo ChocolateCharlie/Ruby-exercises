@@ -1,0 +1,8 @@
+<h1> Bienvenue sur mon blog ! </h1>
+
+<p> Mes articles : </p>
+<ul>
+<% @articles.each do |article| %>
+  <li> <a href="/articles/<%= article.id %>"><%= article.title %></a> </li>
+<% end %>
+</ul>
