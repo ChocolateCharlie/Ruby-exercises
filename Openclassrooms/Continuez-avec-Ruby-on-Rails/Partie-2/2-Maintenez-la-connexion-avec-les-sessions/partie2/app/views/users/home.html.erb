@@ -1,0 +1,7 @@
+<% if @current_user %>
+  <h1> Bienvenue, <%= @current_user.name %> ! </h1>
+  <a href="/users/logout">Déconnexion</a>
+<% else %>
+  <h1> Bienvenue, visiteur anonyme ! </h1>
+  <a href="/users/login">Se connecter</a>
+<% end %>
